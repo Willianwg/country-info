@@ -1,12 +1,12 @@
 # Country Info App
 
-This project consists of a frontend built with **Next.js** and a backend built with **Nest.js**. The application provides information about countries, including name, flag, bordering countries, and historical population data.
+This project consists of a frontend built with **Next.js** and a nest built with **Nest.js**. The application provides information about countries, including name, flag, bordering countries, and historical population data.
 
 ## Project Structure
 
 The repository is divided into two main parts:
 - **Frontend (Next.js)**: Located in the `frontend/` folder.
-- **Backend (Nest.js)**: Located in the `backend/` folder.
+- **nest (Nest.js)**: Located in the `nest/` folder.
 
 Both applications need to be run simultaneously on different ports.
 
@@ -19,9 +19,9 @@ Make sure you have the following tools installed:
 
 ## Environment Variables
 
-### Backend (Nest.js)
+### nest (Nest.js)
 
-Create a `.env` file in the root of the `backend/` folder with the following content:
+Create a `.env` file in the root of the `nest/` folder with the following content:
 PORT=3001  
 COUNTRY_LIST_API_URL=https://date.nager.at/api/v3/AvailableCountries  
 COUNTRY_INFO_API_URL=https://countriesnow.space/api/v0.1/countries  
@@ -39,10 +39,10 @@ Clone this repository to your local machine:
 git clone https://github.com/your-username/country-info-app.git  
 cd country-info-app  
 
-### Backend
+### nest
 
-1. Navigate to the backend folder:
-cd backend  
+1. Navigate to the nest folder:
+cd nest  
 
 2. Install the dependencies:
 npm install  
@@ -54,7 +54,7 @@ npm run start
 # or  
 yarn start  
 
-The backend will be running on port `3001` by default.
+The nest will be running on port `3001` by default.
 
 ### Frontend
 
@@ -71,19 +71,19 @@ npm run dev
 # or  
 yarn dev  
 
-The frontend will be running on port `3000` by default and will communicate with the backend on port `3001`.
+The frontend will be running on port `3000` by default and will communicate with the nest on port `3001`.
 
 ## Running the Project
 
-- **Backend**: Access [http://localhost:3001](http://localhost:3001) to check the API functionality.
+- **nest**: Access [http://localhost:3001](http://localhost:3001) to check the API functionality.
 - **Frontend**: Access [http://localhost:3000](http://localhost:3000) to view the React/Next.js application.
 
-The frontend consumes the backend API to display detailed information about the countries.
+The frontend consumes the nest API to display detailed information about the countries.
 
 ## Testing
 
-### Backend
-To run the tests in the backend (Nest.js), use the following command:
+### nest
+To run the tests in the nest (Nest.js), use the following command:
 npm run test  
 # or  
 yarn test  
